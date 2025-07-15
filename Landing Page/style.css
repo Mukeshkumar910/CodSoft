@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: poppins;
+  line-height: 1.5;
+  color: #463e3e;
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.header{
+  background-color: #365a7d;
+  color: white;
+  padding: 20px 0;
+}
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar{
+  display: flex;
+  gap: 25px;
+}
+.navbar li{
+  list-style: none;
+  font-size: 20px;
+}
+.navbar a:hover{
+  color: #eb55d7;
+}
+.box{
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.boxcontent{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+.box h2{
+  font-size: 50px;
+  margin-bottom: 20px
+}
+.box p{
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.btn{
+  background-color: #e59412;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.btn:hover{
+  background-color: #d35400;
+}
+
+.about, .courses, .reviews, .contact{
+  padding: 60px 0;
+  text-align: center;
+}
+.about p{
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.course-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.course-item{
+  background-color: #dae3e5;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+}
+.reviews-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+.reviews-item{
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-left: 5px solid #f39c12;
+  max-width: 600px;
+  margin: auto;
+}
+.contact form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+.contact input, .contact textarea{
+  padding: 15px;
+  border: 2px solid #9d9b9b;
+  border-radius: 5px;
+}
+.contact button{
+  align-self: flex-start;
+}
+.container h2{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.footer{
+  background-color: #656667;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .course-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
